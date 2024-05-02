@@ -20,6 +20,6 @@
 
 <div class="content">
   <SearchForm {markdownContent} {s} />
-</div>
 
-<div class="content">{@html htmlSafe}</div>
+  {@html htmlSafe}
+</div>

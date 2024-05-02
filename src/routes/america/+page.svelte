@@ -2,9 +2,10 @@
   import { convertMarkdownToHtml } from "$lib/utils/convertMarkdownToHtml";
   import { onMount } from "svelte";
   import type { IData } from "../../types/data";
+  import SearchForm from "$lib/components/SearchForm.svelte";
 
   export let data: IData;
-  const markdownContent = data.markdownContent;
+  const { markdownContent, s = "" } = data;
   let htmlSafe = "";
 
   onMount(async () => {
@@ -16,4 +17,7 @@
   });
 </script>
 
-<div class="content">{@html htmlSafe}</div>
+<div class="content">
+  <SearchForm {markdownContent} {s} />
+  {@html htmlSafe}
+</div>
