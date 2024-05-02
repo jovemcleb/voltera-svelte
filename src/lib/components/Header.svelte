@@ -2,6 +2,7 @@
   import Logo from "./Logo.svelte";
 
   const navLinks = [
+    { href: "/", label: "Home" },
     { href: "/markdown", label: "Markdown" },
     { href: "/america", label: "América" },
     { href: "/tipografia", label: "Tipografia" },
@@ -9,24 +10,33 @@
 </script>
 
 <header class="header">
-  <Logo />
-  <nav>
-    <ul>
-      {#each navLinks as { href, label }}
-        <li>
-          <a class="link" {href}>{label}</a>
-        </li>
-      {/each}
-    </ul>
-  </nav>
+  <div class="content">
+    <Logo />
+    <nav>
+      <ul>
+        {#each navLinks as { href, label }}
+          <li>
+            <a class="link" {href}>{label}</a>
+          </li>
+        {/each}
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <style>
   .header {
+    background-color: #48a715;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #48a715;
     padding: 1rem 2rem;
   }
 

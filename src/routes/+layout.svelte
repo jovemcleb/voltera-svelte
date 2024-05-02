@@ -3,7 +3,14 @@
   import Header from "$lib/components/Header.svelte";
 </script>
 
-<main>
-  <Header />
+<Header />
+<main class="main">
   <slot />
 </main>
+
+<style>
+  .main {
+    margin-top: 6rem;
+    padding: 1rem 2rem;
+  }
+</style>
