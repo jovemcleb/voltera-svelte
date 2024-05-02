@@ -1,8 +1,14 @@
 <script lang="ts">
   import Input from "$lib/components/Input.svelte";
 
-  export let data;
+  interface IData {
+    markdownContent: string;
+    s?: string;
+  }
+
+  export let data: IData;
   const markdownContent = data.markdownContent;
+  let s = data.s;
 
   let searchWord = "";
   let occurrences = 0;
@@ -17,9 +23,19 @@
     occurrences = countOccurrences(searchWord);
     searchResult =
       searchWord && occurrences > 0
-        ? `A palavra "${searchWord}" ocorre ${occurrences} vezes.`
+        ? `A palavra "${searchWord}" aparece ${occurrences} vezes.`
         : null;
+    if (typeof window !== "undefined") {
+      history.pushState({}, "", `?s=${encodeURIComponent(searchWord)}`);
+    }
     searchWord = "";
+  }
+
+  $: {
+    if (s) {
+      searchWord = s;
+      handleSubmit();
+    }
   }
 </script>
 
@@ -34,7 +50,7 @@
     <button type="submit">Buscar</button>
   </form>
   {#if searchResult}
-    <p>{searchResult}</p>
+    <span>{searchResult}</span>
   {/if}
   <h1>Introdução</h1>
   <p>
