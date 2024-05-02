@@ -5,3 +5,13 @@
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  background-color: #f0f2f5;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 90rem;
+  width: 100%;
+}
+
