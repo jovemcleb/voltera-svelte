@@ -95,4 +95,10 @@
     border: none;
     background-color: #afe32e;
   }
+
+  @media (max-width: 534px) {
+    .input-text {
+      width: 100%;
+    }
+  }
 </style>

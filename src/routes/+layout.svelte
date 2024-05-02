@@ -13,4 +13,10 @@
     margin-top: 6rem;
     padding: 1rem 2rem;
   }
+
+  @media (max-width: 769px) {
+    .main {
+      padding: 1rem 1rem;
+    }
+  }
 </style>
