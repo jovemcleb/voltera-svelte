@@ -1,4 +1,5 @@
 <script lang="ts">
+  import "../../styles/blog.css";
   import { onMount } from "svelte";
   import { convertMarkdownToHtml } from "$lib/utils/convertMarkdownToHtml";
   import type { IData } from "../../types/data";
@@ -18,8 +19,8 @@
   });
 </script>
 
-<div class="content">
+<section class="container">
   <SearchForm {markdownContent} {s} />
 
   {@html htmlSafe}
-</div>
+</section>

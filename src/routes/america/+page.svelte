@@ -17,7 +17,7 @@
   });
 </script>
 
-<div class="content">
+<section class="container">
   <SearchForm {markdownContent} {s} />
   {@html htmlSafe}
-</div>
+</section>
