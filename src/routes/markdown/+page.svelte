@@ -1,5 +1,5 @@
 <script lang="ts">
-  import "../../styles/blog.css";
+  // import "../../styles/blog.css";
   import { onMount } from "svelte";
   import { convertMarkdownToHtml } from "$lib/utils/convertMarkdownToHtml";
   import type { IData } from "../../types/data";
