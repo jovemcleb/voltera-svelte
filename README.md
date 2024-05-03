@@ -52,3 +52,7 @@ npm run dev
 ```
 
 4. Agora é só aproveitar o Blog:
+   
+
+https://github.com/jovemcleb/voltera-svelte/assets/60612529/dcd95ddd-5470-4344-8e66-216ecb739b7b
+
