@@ -26,6 +26,7 @@
     if (s) {
       searchWord.set(s);
       handleSubmit();
+      searchWord.set(s);
     }
   }
 </script>

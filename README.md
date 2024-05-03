@@ -1,38 +1,54 @@
-# create-svelte
+# Blog Markdown
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## 👨🏽‍💻 Desenvolvedor
 
-## Creating a project
+**Caleb Lima**
 
-If you're seeing this, you've probably already done this step. Congrats!
+Linkedin: [https://www.linkedin.com/in/caleb-lima/](https://www.linkedin.com/in/caleb-lima/)
+
+Github: [https://github.com/jovemcleb](https://github.com/jovemcleb)
+
+Email: [lima.cardoso.caleb@gmail.com](mailto:lima.cardoso.caleb@gmail.com)
+
+Celular: 91 980119059
+
+## 📝 Descrição
+
+Este projeto é um pequeno blog que faz requisições para consumir arquivos Markdown e os converte para HTML antes da renderização. Em cada post, há um campo para buscar uma palavra específica no texto, indicando quantas vezes essa palavra aparece.
+
+## 🌐Acesse o blog aqui: [https://voltera-svelte.vercel.app/](https://voltera-svelte.vercel.app/)
+
+## 🔧 Tecnologias utilizadas
+
+- Typescript
+- Sveltekit
+- CSS
+- Marked
+- DomPurify
+
+## 🚀 Rodando o projeto
+
+1. Clone o projeto em sua máquina
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
+git clone git@github.com:jovemcleb/voltera-svelte.git
 
-# create a new project in my-app
-npm create svelte@latest my-app
 ```
 
-## Developing
+2. Em seguida, entre no diretório e instale as dependências do projeto com:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```bash
+npm install
+OU
+yarn install
+
+```
+
+3. Rode o comando `npm run dev`:
 
 ```bash
 npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+4. Agora é só aproveitar o Blog:
